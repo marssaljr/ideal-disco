@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+  "name": "Chrome Plugin",
+  "description": "Testing Plugin",
+  "version": "1.0",
+  "content_scripts":[
+      {
+        "matches":[
+          "https://brainly.com.br/*"
+        ],
+        "js": ["content.js"]
+      }
+    ],
+  "permissions": [
+      "activeTab",
+      "storage",
+      "https://ajax.googleapis.com/"
+    ]
+  }
